@@ -24,4 +24,30 @@ let checkTypeOf = combinedArray.map((element: number | string) => {
     return `Welcome ${element}`;
   }
 })
-console.log(checkTypeOf);
+// console.log(checkTypeOf);
+
+// method filter - creates a new array with all elements that pass the test implemented by the provided function.
+let positiveNums: number [] = [2,3,4,5,6];
+let filteredArr: number[] = positiveNums.filter((num: number) => num > 3);
+//console.log("filteredArr", filteredArr);
+
+// method sort 
+let sortNums: number [] = [100, 2, 30, 5, 40, 6];
+let sortedResult = sortNums.sort((a: number, b: number) => a - b);
+// console.log(sortedResult); // [2, 5, 6, 30, 40, 100]
+
+// method push 
+sortedResult.push(200);
+//console.log(sortedResult); // [2, 5, 6, 30, 40, 100, 200]
+
+// method pop
+sortedResult.pop();
+// console.log(sortedResult); // [2, 5, 6, 30, 40, 100]
+
+// method shift 
+sortedResult.shift();
+// console.log(sortedResult); // [5, 6, 30, 40, 100]
+
+// method unshift
+sortedResult.unshift(1);
+//console.log(sortedResult); // [1, 5, 6, 30, 40, 100]
